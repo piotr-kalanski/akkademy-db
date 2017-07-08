@@ -1,0 +1,14 @@
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.akkademy.CacheLastMessageString, org.scalatest.tools.Framework$$anon$1@cbce83d, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.akkademy.AkkademyDbSpec, org.scalatest.tools.Framework$$anon$1@cbce83d, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(HelloSpec, org.scalatest.tools.Framework$$anon$1@cbce83d, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(pong.ScalaAskExamplesTest, org.scalatest.tools.Framework$$anon$1@cbce83d, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 625 milliseconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mTotal number of tests run: 16[0m[0m
+[0m[[0minfo[0m] [0m[36mSuites: completed 4, aborted 0[0m[0m
+[0m[[0minfo[0m] [0m[36mTests: succeeded 16, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0minfo[0m] [0m[32mAll tests passed.[0m[0m
+[0m[[0mdebug[0m] [0mPassed tests:[0m
+[0m[[0mdebug[0m] [0m	com.akkademy.CacheLastMessageString[0m
+[0m[[0mdebug[0m] [0m	com.akkademy.AkkademyDbSpec[0m
+[0m[[0mdebug[0m] [0m	pong.ScalaAskExamplesTest[0m
+[0m[[0mdebug[0m] [0m	HelloSpec[0m
