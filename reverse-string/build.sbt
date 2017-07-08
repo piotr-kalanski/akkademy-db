@@ -1,4 +1,4 @@
-name := """akkademy-db-server"""
+name := """reverse-string"""
 
 version := "1.0"
 
@@ -8,9 +8,6 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-agent" % "2.3.11",
   "com.typesafe.akka" %% "akka-actor" % "2.3.11",
   "com.typesafe.akka" %% "akka-remote" % "2.3.11",
-  "com.akkademy-db" %% "akkademy-db-messages" % "0.0.1-SNAPSHOT",
   "com.typesafe.akka" %% "akka-testkit" % "2.3.11" % "test",
   "org.scalatest" %% "scalatest" % "2.2.4" % "test"
 )
-
-fork in run := true

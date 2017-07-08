@@ -3,7 +3,7 @@ package com.akkademy
 import akka.actor.ActorSystem
 import akka.pattern.ask
 import akka.util.Timeout
-import com.akkademy.messages.{GetRequest, SetRequest}
+import com.akkademy.messages._
 
 import scala.concurrent.Future
 import scala.concurrent.duration._
@@ -17,7 +17,15 @@ class SClient(remoteAddress: String){
     remoteDb ? SetRequest(key, value)
   }
 
+  def setIfNotExists(key: String, value: Object): Future[Any] = {
+    remoteDb ? SetIfNotExistsRequest(key, value)
+  }
+
   def get(key: String): Future[Any] = {
     remoteDb ? GetRequest(key)
+  }
+
+  def delete(key: String): Unit = {
+    remoteDb ! DeleteRequest(key)
   }
 }
