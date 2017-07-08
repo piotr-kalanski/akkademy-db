@@ -1,2 +1,0 @@
-# akkademy-db
-Learning Akka
