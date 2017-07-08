@@ -9,7 +9,7 @@ class AkkademyDbSpec extends FunSpecLike with Matchers with BeforeAndAfterEach {
   implicit val system = ActorSystem()
 
   describe("akkademy") {
-    describe("given SetRequet") {
+    describe("given SetRequest") {
       it("should place key/value into map") {
         val actorRef = TestActorRef(new AkkademyDb)
         actorRef ! SetRequest("key", "value")

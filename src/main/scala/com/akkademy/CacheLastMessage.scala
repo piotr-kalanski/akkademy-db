@@ -6,13 +6,13 @@ import com.akkademy.messages.SetRequest
 
 import scala.collection.mutable
 
-class AkkademyDb extends Actor {
-  val map = new mutable.HashMap[String, Object]()
+class CacheLastMessage extends Actor {
+  var cache: String = ""
   val log = Logging(context.system, this)
   override def receive: Receive = {
-    case SetRequest(key, value) => {
-      log.info("received SetRequest - key: {} value: {}", key, value)
-      map.put(key, value)
+    case s:String => {
+      log.info("received string: {}", s)
+      cache = s
     }
     case o => log.info("received unknown message: {}", o)
   }
